@@ -1,7 +1,7 @@
 {
     "_QPVersion": "0.1.1",
     "name": "MRCPlus",
-    "id": "MRCPlus",
+    "id": "mrcplus",
     "author": "Raemien",
     "coverImage": "cover.png",
     "description": "Unlock additional options for Oculus Mixed Reality Capture. Requires a PC running the MRC OBS plugin.",

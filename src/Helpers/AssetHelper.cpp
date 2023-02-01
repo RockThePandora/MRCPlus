@@ -30,5 +30,5 @@ UnityEngine::Shader* LoadFXAAEffect()
     //if (shaderArray.Length() < 1) return nullptr;
     //UnityEngine::Shader* clonedShader = reinterpret_cast<UnityEngine::Shader*>(shaderArray[0]);
     //bundle->Unload(false);
-    return clonedShader;
+    //return clonedShader;
 }

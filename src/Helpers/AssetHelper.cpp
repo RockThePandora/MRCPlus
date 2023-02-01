@@ -1,7 +1,6 @@
 #include "beatsaber-hook/shared/utils/il2cpp-utils.hpp"
 
 #include "main.hpp"
-#include "EmbeddedContent/Shaders.hpp"
 
 
 #include "UnityEngine/ImageConversion.hpp"

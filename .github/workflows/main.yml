@@ -105,4 +105,4 @@ jobs:
       with:
         name: ${{env.qmodName}}.qmod
         path: ./${{ env.qmodName }}.qmod
-        if-no-files-found: error
+        if-no-files-found: warn

@@ -1,7 +1,7 @@
 name: NDK build
 
 env:
-    module_id: MRCPlus
+    module_id: mrcplus
     qmodName: MRCPlus
 
 on:

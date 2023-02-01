@@ -43,5 +43,5 @@ void MRCPlusFlowCoordinator::BackButtonWasPressed(HMUI::ViewController* topView)
 {
     getConfig().Write();
     //HMUI::FlowCoordinator* settingsFC = QuestUI::GetModSettingsFlowCoordinator();
-    settingsFC->DismissFlowCoordinator(this, (int)0, nullptr, false);
+    //settingsFC->DismissFlowCoordinator(this, (int)0, nullptr, false);
 }

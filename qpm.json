@@ -3,7 +3,7 @@
   "dependenciesDir": "extern",
   "info": {
     "name": "MRCPlus",
-    "id": "MRCPlus",
+    "id": "mrcplus",
     "version": "0.6.0",
     "url": null,
     "additionalData": {}

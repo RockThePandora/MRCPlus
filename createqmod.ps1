@@ -1,5 +1,5 @@
 Param(
-    [String]$qmodname="MRCPlus",
+    [String]$qmodname="",
     [Parameter(Mandatory=$false)]
     [Switch]$clean
 )

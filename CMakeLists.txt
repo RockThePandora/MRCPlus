@@ -1,9 +1,6 @@
 # include some defines automatically made by qpm
 include(qpm_defines.cmake)
 
-# override mod id
-set(MOD_ID "#{id}")
-
 # Enable link time optimization
 # In my experience, this can be highly unstable but it nets a huge size optimization and likely performance
 # However, the instability was seen using Android.mk/ndk-build builds. With Ninja + CMake, this problem seems to have been solved.
@@ -55,6 +52,12 @@ target_include_directories(${COMPILE_ID} PUBLIC ${SHARED_DIR})
 # codegen includes 
 target_include_directories(${COMPILE_ID} PRIVATE ${EXTERN_DIR}/includes/${CODEGEN_ID}/include)
 
+#VLC
+target_include_directories(${COMPILE_ID} PRIVATE SYSTEM vlc/include)
+target_link_directories(${COMPILE_ID} PRIVATE vlc/libs)
+RECURSE_FILES(vlc_list vlc/libs/*.so)
+target_link_libraries(${COMPILE_ID} PRIVATE ${vlc_list})
+
 target_link_libraries(${COMPILE_ID} PRIVATE -llog)
 # add extern stuff like libs and other includes
 include(extern.cmake)
@@ -78,3 +81,5 @@ add_custom_command(TARGET ${COMPILE_ID} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E rename stripped_lib${COMPILE_ID}.so lib${COMPILE_ID}.so
         COMMENT "Rename the stripped lib to regular"
         )
+
+include(assets_include.cmake)

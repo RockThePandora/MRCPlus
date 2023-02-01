@@ -29,6 +29,6 @@ UnityEngine::Shader* LoadFXAAEffect()
     ArrayW<UnityEngine::Object*> shaderArray = ab_LoadAllAssets(bundle, il2cpp_utils::newcsstr(""), csTypeOf(UnityEngine::Shader*));
     if (shaderArray.Length() < 1) return nullptr;
     UnityEngine::Shader* clonedShader = reinterpret_cast<UnityEngine::Shader*>(shaderArray[0]);
-    bundle->Unload(false);
+    //bundle->Unload(false);
     return clonedShader;
 }

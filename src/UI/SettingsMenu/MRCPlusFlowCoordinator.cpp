@@ -42,6 +42,6 @@ void MRCPlusFlowCoordinator::UpdateSettingsVisibility(bool leftVisible, bool rig
 void MRCPlusFlowCoordinator::BackButtonWasPressed(HMUI::ViewController* topView)
 {
     getConfig().Write();
-    HMUI::FlowCoordinator* settingsFC = QuestUI::GetModSettingsFlowCoordinator();
+    //HMUI::FlowCoordinator* settingsFC = QuestUI::GetModSettingsFlowCoordinator();
     settingsFC->DismissFlowCoordinator(this, (int)0, nullptr, false);
 }
